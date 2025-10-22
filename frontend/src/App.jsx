@@ -74,50 +74,36 @@ function App() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <a
-            className="btn"
-            href="https://drive.google.com/file/d/1wqEjzH8XxXKAhQGML1CvA5KzK2xMdcBi/view"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Resume
-          </a>
+          <a className="btn" href="https://drive.google.com/file/d/1wqEjzH8XxXKAhQGML1CvA5KzK2xMdcBi/view" target="_blank" rel="noreferrer">Resume</a>
         </nav>
       </header>
 
       <main>
-        {/* 🏠 HOME */}
+        {/* 🏠 HOME Section */}
         <section className="hero" id="home">
           <div className="hero-content">
-            <h1>
-              Hey, I'm <span className="highlight">Surya</span> 👋
-            </h1>
+            <h1>Hey, I'm <span className="highlight">Surya</span> 👋</h1>
             <p className="about-text">
-              A passionate <strong>Frontend Developer</strong> who loves transforming creative ideas into sleek, interactive, and high-performance web apps.
-              <br />
-              <br />
+              A passionate <strong>Frontend Developer</strong> who loves transforming creative ideas into sleek, interactive, and high-performance web apps.  
+              I focus on crafting pixel-perfect interfaces, optimizing performance, and delivering clean, scalable code.  
+              <br /><br />
             </p>
             <ul className="socials">
-              <li>
-                <a className="social" href={SOCIALS.linkedin}><LinkedInIcon /></a>
-              </li>
-              <li>
-                <a className="social" href={SOCIALS.github}><GitHubIcon /></a>
-              </li>
-              <li>
-                <a className="social" href={SOCIALS.leetcode}><LeetCodeIcon /></a>
-              </li>
+              <li><a className="social" href={SOCIALS.linkedin}><LinkedInIcon /></a></li>
+              <li><a className="social" href={SOCIALS.github}><GitHubIcon /></a></li>
+              <li><a className="social" href={SOCIALS.leetcode}><LeetCodeIcon /></a></li>
             </ul>
           </div>
         </section>
 
-        {/* 👨‍💻 ABOUT */}
+        {/* 👨‍💻 ABOUT Section */}
         <section id="about" className="section about">
           <h2>About Me</h2>
           <p>
             I’m a Computer Science Engineer with a strong passion for building clean, intuitive, and efficient web interfaces.
             I enjoy designing engaging user experiences and turning complex ideas into simple, usable applications.
           </p>
+
           <div className="skills">
             <h3>Skills</h3>
             <ul>
@@ -130,36 +116,56 @@ function App() {
               <li>Git & GitHub</li>
             </ul>
           </div>
+
           <div className="certifications">
             <h3>Certifications</h3>
-            <p>✅ Google UX Design Professional Certificate — Coursera</p>
+            <p>✅ Google UX Design Professional Certificate (7 Courses) — Coursera</p>
           </div>
         </section>
 
-        {/* 💻 PROJECTS */}
+        {/* 💻 PROJECTS Section */}
         <section id="projects" className="section projects">
           <h2>Projects</h2>
           <div className="grid">
             <article className="card">
               <h3>Online Learning App</h3>
               <p>Personalized courses, interactive quizzes, and certifications with a responsive React UI.</p>
+              <div className="card-actions">
+                <a href="#" className="link">View</a>
+                <a href="#" className="link">Code</a>
+              </div>
             </article>
             <article className="card">
               <h3>Travel Booking App</h3>
               <p>Explore destinations, compare packages, and book easily — all in one seamless platform.</p>
+              <div className="card-actions">
+                <a href="#" className="link">View</a>
+                <a href="#" className="link">Code</a>
+              </div>
             </article>
             <article className="card">
               <h3>Food Delivery App</h3>
               <p>Modern UI for restaurant browsing, order tracking, and live delivery updates.</p>
+              <div className="card-actions">
+                <a href="#" className="link">View</a>
+                <a href="#" className="link">Code</a>
+              </div>
             </article>
             <article className="card">
               <h3>Dog Walking App</h3>
-              <p>A user-friendly app connecting dog owners with trusted walkers with GPS tracking.</p>
+              <p>
+                A user-friendly app connecting dog owners with trusted walkers.  
+                Features include walk scheduling, GPS tracking, verified walkers, and secure in-app payments.
+              </p>
+              <div className="card-actions">
+                <a href="#" className="link">View</a>
+                <a href="#" className="link">Code</a>
+              </div>
             </article>
           </div>
         </section>
 
-        {/* ✉️ CONTACT */}
+         {/* ✉️ CONTACT */}
         <section id="contact" className="section contact">
           <h2>Get In Touch</h2>
           <form ref={form} onSubmit={sendEmail} className="contact-form">
@@ -171,12 +177,11 @@ function App() {
           </form>
         </section>
       </main>
-
       <footer className="footer">
         <p>© {new Date().getFullYear()} Surya C. All rights reserved.</p>
       </footer>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
