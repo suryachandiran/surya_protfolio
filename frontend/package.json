@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://shrisoundharyaa.github.io/suryac/",
+  "homepage": "https://suryachandiran.github.io/surya_profolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,6 +13,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "emailjs-com": "^3.2.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
